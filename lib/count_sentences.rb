@@ -17,8 +17,6 @@ class String
   def count_sentences
     # split sentence on period, question mark, or exclamation mark
     # count the number of elements from the split
-    found = self.split(/[\. \?+ !+] /)
-    found.length
+    self.split(/[\. \?+ !+] /).length # brackets indicate any of the elements, + = 1 or more
   end
 end
-
